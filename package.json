@@ -5,16 +5,19 @@
   "dependencies": {
     "@gooddata/react-components": "6.2.0",
     "http-proxy-middleware": "0.19.1",
+    "moment": "^2.26.0",
     "node-sass": "4.11.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "cross-env HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "prettier --no-semi --single-quote --no-bracket-spacing --trailing-comma es5 'src/**/*.{js,css}' --write"
   },
   "browserslist": [
     ">0.2%",
@@ -23,6 +26,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "cross-env": "6.0.3"
+    "cross-env": "6.0.3",
+    "eslint": "^5.6.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.3.0",
+    "prettier": "^1.19.1"
   }
 }
